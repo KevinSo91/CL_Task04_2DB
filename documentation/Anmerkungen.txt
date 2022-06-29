@@ -1,0 +1,12 @@
+- 2 unterschiedliche Packages, jeweils mit Entity-Klasse und Repository Interface (hier beispielhaft 'product' und 'user')
+- Die Entities beziehen sich auf 2 Datenbanken (Postgres)
+- In den Application-Properties werden für beide Datenbanken die Informationen hinterlegt (url, user, password, driver)
+
+- JE PACKAGE wird eine Config-Klasse erstellt
+- In der Config werden die DataSourceProperties für das zugehörige Package erstellt 
+  (Das Prefix bestimmt welche Werte aus den Application-Properties übernommen werden)
+- Aus den DataSourceProperties wird dann die DataSource erstellt
+- Aus der DataSource wird die EntityManagerFactoryBean erstellt
+- (Optional?) Aus der EntityManagerFactoryBean wird der PlatformTransactionManager erstellt
+
+- In den beiden Packages werden nun für die Entitys/Repositories jeweils die konfigurierten DataSources verwendet

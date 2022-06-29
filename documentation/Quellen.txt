@@ -1,0 +1,7 @@
+https://www.baeldung.com/spring-data-jpa-multiple-databases
+https://www.baeldung.com/spring-boot-configure-multiple-datasources
+
+https://www.kindsonthegenius.com/microservices/multiple-database-configuration-for-microservice-in-spring-boot/
+
+
+https://www.youtube.com/watch?v=vmQLkhbYejw

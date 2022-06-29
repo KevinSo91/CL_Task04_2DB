@@ -10,10 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigurationProperties
 //@EntityScan("mainPackage.entities.product")
 @ComponentScan("mainPackage.entities.*")
+
 public class ClTask042DbApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClTask042DbApplication.class, args);
+		
 	}
-
+	
 }
