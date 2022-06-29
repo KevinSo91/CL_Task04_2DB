@@ -1,6 +1,5 @@
 package mainPackage.entities.user;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,8 +22,7 @@ public class User {
     private int id;
 
     private String name;
-
-    @Column(unique = true, nullable = false)
+   
     private String email;
 
     private int age;
